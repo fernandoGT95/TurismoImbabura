@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        
+        /* Estilos para el menú */
+        ul {
+            
+          list-style-type: none; /* Eliminar viñetas de la lista */
+          margin: 0;
+          padding: 0;
+          background-color: #333; /* Color de fondo del menú */
+          overflow: hidden;
+          
+        }
+    
+        li {
+          float: left; /* Hacer que los elementos de la lista se muestren en línea */
+          
+        }
+    
+        li a {
+          display: block; /* Hacer que los enlaces ocupen todo el ancho del elemento li */
+          color: white;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+          
+        }
+    
+        li a:hover {
+          background-color: #111; /* Cambiar el color de fondo al pasar el ratón sobre el enlace */
+          
+        }
+      </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    <title>TURISMO</title>
+    
+</head>
+<body>
+    <header>
+        
+        <center><h1>IMBABURA</h1> <img src="imagenes/Escudo_Provincia_Imbabura.png" width="70" alt="Yahuarocha"></center>
+        <nav>
+            
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <p> <li><a href="destinos.html">Destinos</a></li></p>
+            <p><li><a href="rutas.html">Rutas</a></li></p>
+            <li><a href="experiencias.html">Experiencias</a></li>
+            <li><a href="noticias.html">Noticias</a></li>
+            <li><a href="reservacion.html">Reservación</a></li>
+            </ul>
+        </nav>
+      </header>
+
+  <main>
+    <center><h1>Formulario de Reserva</h1></center>
+
+    <form action="#" method="post">
+     <p> <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required></p>
+      <p> <label for="nombre">Apellido:</label>
+        <input type="text" id="apellido" name="apellido" required></p>
+      <label for="opciones">Lugar de Reserva:</label>
+      <select id="opciones" name="opciones">
+        <option value="opcion1">Elegir</option>
+        <option value="opcion2">Laguna de Yahuarcocha</option>
+        <option value="opcion3">Lago San Pablo</option>
+        <option value="opcion4">Laguna de Cuicocha</option>
+       </select>
+  
+     <p> <label for="email">Correo Electrónico:</label>
+      <input type="email" id="email" name="email" required></p>
+  
+     <p> <label for="fecha-llegada">Fecha de Llegada:</label>
+      <input type="date" id="fecha-llegada" name="fecha-llegada" required></p>
+        
+      <p> <label for="fecha-salida">Fecha de Salida:</label>
+      <input type="date" id="fecha-salida" name="fecha-salida" required></p>
+  
+      <p> <label for="comentarios">Comentarios:</label>
+      <textarea id="comentarios" name="comentarios" rows="4"></textarea></p>
+  
+      <button type="submit">Enviar Reserva</button>
+    </form>
+  
+
+    <!-- Otras secciones (Destinos, Rutas, Experiencias, Contactos, Reservación) -->
+  </main>
+  <!-- Pie de Página -->
+  <footer>
+    <p>Visit The Imbabura © 2023 Brand ECU. All rights reserved</p>
+    
+  </footer>
+
+</body>
+</html>
